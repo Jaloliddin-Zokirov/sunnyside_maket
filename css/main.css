@@ -494,6 +494,17 @@ img {
   background-color: #77CDF5;
 }
 
+.header__btn {
+  display: none;
+}
+
+.header__button {
+  font-size: 32px;
+  color: #FFF;
+  border: none;
+  background-color: transparent;
+}
+
 .hero {
   position: relative;
   z-index: -2;
