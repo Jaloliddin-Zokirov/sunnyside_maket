@@ -1,0 +1,33 @@
+.hero{
+  position: relative;
+  z-index: -2;
+  padding: 71px 0 562px;
+  background-color: #4ABDF2;
+
+  &::after{
+    position: absolute;
+    top: -98px;
+    left: calc(50% - 720px);
+    width: 1440px;
+    height: 800px;
+    background-image: url("../images/strelka.png"), url("../images/lemon.png");
+    background-repeat: no-repeat;
+    background-size: 30px 107px, 1440px 800px;
+    background-position: center calc(50% + 15px), center;
+    z-index:  -1;
+    content: "";
+  }
+  
+}
+
+
+.hero__title{
+  margin: 0;
+  font-family: 'Fraunces Soft';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  text-align: center;
+  color: #FFFFFF;
+}

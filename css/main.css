@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-SemiBold.woff2") format("woff2"), url("../fonts/Barlow-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces Soft';
+  src: url("../fonts/FrauncesSoft-Bold.woff2") format("woff2"), url("../fonts/FrauncesSoft-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces Soft';
+  src: url("../fonts/FrauncesSoft-Black.woff2") format("woff2"), url("../fonts/FrauncesSoft-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -391,8 +415,114 @@ img {
 
 .container {
   width: 100%;
-  max-width: 0;
+  max-width: 1372px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.header {
+  padding: 32px 0;
+  background-color: #4ABDF2;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-link {
+  text-decoration: none;
+}
+
+.header__logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+.header-menu {
+  margin-left: auto;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu__item {
+  margin-right: 47px;
+}
+
+.menu__item:nth-child(4) {
+  margin-right: 0;
+}
+
+.menu__link {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.active {
+  padding: 16px 31px;
+  font-family: 'Fraunces Soft';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  color: #24303E;
+  background-color: #FFF;
+  border-radius: 28px;
+}
+
+.active:hover {
+  color: #FFF;
+  background-color: #77CDF5;
+}
+
+.hero {
+  position: relative;
+  z-index: -2;
+  padding: 71px 0 562px;
+  background-color: #4ABDF2;
+}
+
+.hero::after {
+  position: absolute;
+  top: -98px;
+  left: calc(50% - 720px);
+  width: 1440px;
+  height: 800px;
+  background-image: url("../images/strelka.png"), url("../images/lemon.png");
+  background-repeat: no-repeat;
+  background-size: 30px 107px, 1440px 800px;
+  background-position: center calc(50% + 15px), center;
+  z-index: -1;
+  content: "";
+}
+
+.hero__title {
+  margin: 0;
+  font-family: 'Fraunces Soft';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  text-align: center;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
