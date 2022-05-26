@@ -854,6 +854,16 @@ img {
             flex-direction: column;
     padding: 0;
   }
+  .content__element {
+    width: 576px;
+    background-size: 576px 600px;
+  }
+  .content__element:nth-child(2) {
+    background-size: 576px 600px;
+  }
+  .content__box {
+    margin-left: 119px;
+  }
 }
 
 .client__inner {
@@ -1024,6 +1034,10 @@ img {
 }
 
 @media only screen and (max-width: 576px) {
+  .images .container {
+    max-width: 576px;
+    width: 100%;
+  }
   .images__inner {
     display: block;
     width: 576px;
