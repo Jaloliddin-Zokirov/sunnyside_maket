@@ -63,3 +63,75 @@
     background-color: #77CDF5;
   }
 }
+
+.header__btn{
+  display: none;
+}
+
+.header__button{
+  font-size: 32px;
+  color: #FFF;
+  border: none;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 36rem) {
+
+  .header__inner{
+    padding: 3rem 0;
+  }
+
+  .header__link-img{
+    width: 8rem;
+    height: 2rem;
+  }
+
+  .menu__btn{
+    display: block;
+  }
+
+  .header__btn{
+    display: block;
+  }
+
+  .header__button{
+    font-size: 1.8rem;
+  }
+
+  .header__menu{
+    position: absolute;
+    top: -37.5rem;
+    right: 0;
+    width: 16rem;
+    height: 37rem;
+    padding: 2.5rem 0 0 3rem;
+    background-color: $police-blue;
+    transition: all 0.5s ease;
+    z-index: 2;
+
+    &--open {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../images/tel-menu.svg");
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      overflow-x: hidden;
+    }
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu__item{
+    margin-bottom: 2rem;
+  }
+
+  .right{
+    margin-left: 0;
+  }
+
+}
