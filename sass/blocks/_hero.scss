@@ -48,12 +48,13 @@
       left: calc(50% - 185px);
       z-index: 2;
       display: block;
-      width: 375px;
-      height: 538px;
+      width: 385px;
+      height: 520px;
       background-image: url("../images/strelka.png"), url("../images/lemon-tel.png");
       background-repeat: no-repeat;
-      background-size: 30px 107px, 375px 538px;
+      background-size: 30px 107px, 385px 520px;
       background-position: center calc(50% + 15px), center;
+      z-index: -1;
       content: "";
     }
 
