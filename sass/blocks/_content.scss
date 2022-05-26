@@ -185,4 +185,16 @@
     padding: 0;
   }
 
+  .content__element {
+    width: 576px;
+    background-size: 576px 600px;
+  }
+
+  .content__element:nth-child(2) {
+    background-size: 576px 600px;
+  }
+
+  .content__box {
+    margin-left: 119px;
+  }
 }

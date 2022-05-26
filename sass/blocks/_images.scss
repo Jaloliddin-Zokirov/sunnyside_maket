@@ -17,6 +17,13 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .images {
+    .container {
+      max-width: 576px;
+      width: 100%;
+    }
+  }
+
   .images__inner {
     display: block;
     width: 576px;
