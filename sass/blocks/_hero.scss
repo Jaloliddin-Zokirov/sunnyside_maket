@@ -1,6 +1,7 @@
 .hero{
   position: relative;
   z-index: -2;
+  width: 100%;
   padding: 71px 0 562px;
   background-color: #4ABDF2;
 
@@ -8,7 +9,9 @@
     position: absolute;
     top: -98px;
     left: calc(50% - 720px);
-    width: 1440px;
+    z-index: 2;
+    width: 100%;
+    max-width: 1440px;
     height: 800px;
     background-image: url("../images/strelka.png"), url("../images/lemon.png");
     background-repeat: no-repeat;
@@ -30,4 +33,19 @@
   line-height: 69px;
   text-align: center;
   color: #FFFFFF;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+
+  .hero{
+
+
+    &::after{
+      width: 375px;
+      height: 538px;
+      background-size: 30px 107px, 375px 538px;
+    }
+  }
 }

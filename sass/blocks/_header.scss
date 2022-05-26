@@ -1,4 +1,5 @@
 .header{
+  width: 100%;
   padding: 32px 0;  
   background-color: #4ABDF2;
 }
@@ -17,13 +18,14 @@
   height: 100%;
 }
 
-.header-menu{
-  margin-left: auto;
+.header__menu{
+  width: 100%;
 }
 
 .menu__list{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -66,72 +68,95 @@
 
 .header__btn{
   display: none;
+  width: 100%;
+
 }
 
-.header__button{
+.btn__one{
+  display: none;
   font-size: 32px;
   color: #FFF;
   border: none;
   background-color: transparent;
 }
 
-@media only screen and (max-width: 36rem) {
+.btn__two{
+  font-size: 42px;
+  color: #FFF;
+  border: none;
+  background-color: transparent;
+}
 
-  .header__inner{
-    padding: 3rem 0;
+
+
+
+
+@media only screen and (max-width: 576px) {
+
+  .header__menu{
+    position: absolute;
+    top: -400px;
+    right: calc(50% - 160px);
+    z-index: 10;
+    transition: all 0.4s ease;
+    width: 100%;
+    max-width: 329px;
+    padding: 39px 0;
+    background-color: #FFFCF8;
+
+    &--open{
+      position: absolute;
+      top: 130px;
+      transition: all 0.4s ease;
+    }
+
+    &::before{
+      position: absolute;
+      top: -24px;
+      right: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-top: 12px solid transparent;
+      border-right: 12px solid #FFFCF8;
+      border-bottom: 12px solid #FFFCF8;
+      border-left: 12px solid transparent;
+      content: "";
+    }
   }
 
-  .header__link-img{
-    width: 8rem;
-    height: 2rem;
+  .menu__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
   }
 
-  .menu__btn{
-    display: block;
+  .menu__item{
+    margin-right: 0;
+    margin-bottom: 32px;
+
+    &:nth-child(4){
+      margin-bottom: 0;
+    }
+  }
+
+  .menu__link{
+    display: inline-block;
+    color: #808397;
+  }
+
+  .active{
+    color: #24303E;
+    background-color: #FBD600;
   }
 
   .header__btn{
     display: block;
   }
 
-  .header__button{
-    font-size: 1.8rem;
+  .btn__one{
+    display: block;
+    margin-left: auto;
   }
-
-  .header__menu{
-    position: absolute;
-    top: -37.5rem;
-    right: 0;
-    width: 16rem;
-    height: 37rem;
-    padding: 2.5rem 0 0 3rem;
-    background-color: $police-blue;
-    transition: all 0.5s ease;
-    z-index: 2;
-
-    &--open {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-image: url("../images/tel-menu.svg");
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      overflow-x: hidden;
-    }
-  }
-
-  .menu__list {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu__item{
-    margin-bottom: 2rem;
-  }
-
-  .right{
-    margin-left: 0;
-  }
-
 }

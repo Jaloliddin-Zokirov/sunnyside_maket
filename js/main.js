@@ -1,4 +1,4 @@
-var elButton = document.querySelector('.header__button')
+var elButton = document.querySelector('.btn__one')
 var elMenu = document.querySelector('.header__menu')
 
 elButton.addEventListener('click', function () {
