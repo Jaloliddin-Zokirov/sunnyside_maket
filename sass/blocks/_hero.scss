@@ -17,7 +17,6 @@
   font-size: 56px;
   line-height: 69px;
   text-align: center;
-  letter-spacing: 8.75px;
   color: #FFFFFF;
 }
 
@@ -27,5 +26,10 @@
 
   .hero{
     padding: 56px 0 320px;
+  }
+
+  .hero__title{
+    font-size: 40px;
+    line-height: 49px;
   }
 }

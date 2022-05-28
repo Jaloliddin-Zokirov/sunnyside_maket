@@ -14,24 +14,12 @@
     width: 100%;
     max-width: 720px;
     padding: 0;
-    // height: 581px;
-    // padding: 0;
-    // background-image: url("../images/egg.jpg");
-    // background-repeat: no-repeat;
-    // background-size: 720px 581px;
-    // background-position: center;
   }
 
   &:nth-child(3){
     width: 100%;
     max-width: 720px;
     padding: 0;
-    // height: 600px;
-    // padding: 0;
-    // background-image: url("../images/cup.jpg");
-    // background-repeat: no-repeat;
-    // background-size: 720px 600px;
-    // background-position: center;
   }
 
   &:nth-child(4) > .item__link{
@@ -139,7 +127,22 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 668px) {
+
+  .content__item{
+
+
+    &:nth-child(5){
+      padding: 365px 50px 59px;
+    }
+
+    &:nth-child(6){
+      padding: 365px 50px 59px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
 
   .content__item{
     padding: 64px 24px;
@@ -152,5 +155,12 @@
     &:nth-child(6){
       padding: 365px 24px 59px;
     }
+  }
+}
+
+@media only screen and (max-width: 370px) {
+
+  .content__item:nth-child(5){
+    padding-top: 300px;
   }
 }
